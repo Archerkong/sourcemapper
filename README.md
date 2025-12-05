@@ -100,5 +100,6 @@ $ ./sourcemapper -output test -jsurl http://localhost:8080/main.js
 2024/01/05 18:43:54 [+] Writing 4262 bytes to test/webpack:/app/node_modules/ansi-html-community/index.js.
 2024/01/05 18:43:54 [+] Writing 40 bytes to test/webpack:/app/node_modules/axios/index.js.
 ```
-##https command：-insecure   ./sourcemapper -insecure -output test -jsurl http://localhost:8080/main.js
+## https command：-insecure   ./sourcemapper -insecure -output test -jsurl http://localhost:8080/main.js
+
 **Note: sourcemapper will retrieve any URL referenced as a sourcemap, so a malicious JavaScript file parsed with sourcemapper can force sourcemapper to make a GET request to any URL**
